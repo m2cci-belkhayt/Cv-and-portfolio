@@ -42,5 +42,5 @@ Explain how to navigate through the portfolio and showcase different sections, p
 For inquiries or collaboration opportunities, feel free to reach out:
 
 - **Email:** belkhayatetaha1@example.com
-- **LinkedIn:** [Belkhayate Taha]([https://www.linkedin.com/in/taha-belkhayate/]())
+- **LinkedIn:** [Belkhayate Taha](https://www.linkedin.com/in/taha-belkhayate/)
 - **Portfolio Website:** [Your Portfolio Website](https://www.yourportfolio.com)
