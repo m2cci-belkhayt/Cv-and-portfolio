@@ -97,7 +97,7 @@ nav div a {
 
 nav ul {
   display: flex;
-  align-items: center;
+  align-items: auto;
   gap: 24px;
   border-right: 1px solid #999999;
   padding-left: 500px;
@@ -260,34 +260,23 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-  nav ul {
-    padding-left: 0;
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
   }
 
-  .menu-links {
-    position: static;
-    flex-direction: row;
-    gap: 12px;
-    justify-content: space-between;
-    width: auto;
-    padding-left: 0;
+  .menu-links.show {
     display: flex;
   }
 
   .burger-menu {
-    display: none;
-  }
-
-  /* Add responsive styles for smaller screens */
-  .img-gallery a > img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  figcaption {
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
+    display: block;
   }
 }
-
