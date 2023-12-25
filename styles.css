@@ -178,3 +178,21 @@ input[id="react"]:checked ~ .slider {
   background: var(--color);
   color: white;
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab {
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .tabs .slider {
+    width: 100%;
+    transform: translateX(0);
+  }
+}
