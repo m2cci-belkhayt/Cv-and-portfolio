@@ -1,0 +1,246 @@
+body {
+  width: 100%;
+  background-color: #ecf4fb;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  color: #3498db;
+  font-size: 2em;
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+/*-------------------------*/
+
+.row{
+  margin-bottom: 25px;
+}
+.img-gallery a > img {
+  margin-left: 20%;
+  display: block;
+  max-width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.6s ease;
+}
+
+.img-gallery img:hover {
+  scale: 0.85;
+  box-shadow: 10px 26px 60px rgba(68, 77, 136, 0.3);
+}
+
+figcaption {
+  margin-bottom: 5%;
+  font-size: medium;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+
+.separator-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, #3498db, #e74c3c); /* Adjust the gradient colors as needed */
+  border-radius: 5px;
+}
+/* nav bar ------------------------------------------------------------------------------------------------------- */
+
+header {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+nav div i {
+  padding-left: 20px;
+  color: #0aa5ff;
+  font-size: 22px;
+}
+
+nav div a {
+  color: white;
+  margin-left: 12px;
+  font-size: larger;
+  font-size: 30px;
+}
+
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-right: 1px solid #999999;
+  padding-left: 500px;
+}
+
+.menu-links li a {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #999999;
+  padding: 6px 20px;
+}
+.menu-links a:hover {
+  color: white;
+}
+
+.log-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #999999;
+  border-radius: 10px;
+  border: 2px solid #0aa5ff;
+  transition: 0.5s;
+}
+
+.log-in:hover {
+  background-color: #0aa5ff;
+  color: white;
+}
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+
+
+
+/*--------------footer--------*/
+
+footer {
+  padding: 0.5rem clamp(3rem, 6vw, 14rem);
+  background-color: hsl(0, 0%, 10%);
+  margin-top: auto; /* Push the footer to the bottom */
+  margin-left: -2px;
+  margin-right: 0px;
+  width: 100%; 
+}
+
+.footer-wrapper {
+  max-width: 150rem;
+ /* Center the footer content horizontally */
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer-subscribe {
+  max-width: clamp(20rem, 33vw, 33rem);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-subscribe > h2 {
+  font-size: clamp(1.5rem, 2.3vw, 2.25rem);
+  color: grey;
+}
+.input-box {
+  display: flex;
+  max-width: 100%;
+  padding-block: 1rem;
+  border-bottom: 1px solid black;
+  margin-top: 3rem;
+}
+.input-box > input {
+  flex-grow: 1;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(3rem, 4vw, 7rem);
+}
+.footer-nav > div > h3 {
+  color: grey;
+  font-size: 1.5rem;
+}
+.footer-nav > div > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.footer-nav > div li {
+  font-size: 1.125rem;
+  font-weight: 50px;
+  font-style: italic;
+  transition: opacity 200ms ease;
+  color: black;
+}
+
+.footer-nav > div li a{
+  font-size: 1.125rem;
+  font-weight: 50px;
+  font-style: italic;
+  transition: opacity 200ms ease;
+  color: whitesmoke;
+}
+.footer-nav > div li:hover {
+  opacity: 0.5;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  margin-top: 5rem;
+  color: grey;
+}
+
+@media only screen and (max-width: 1100px) {
+  .menu-links {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      padding: 10px;
+  }
+
+  .menu-links.show {
+      display: flex;
+  }
+
+  .burger-menu {
+      display: block;
+  }
+}
+

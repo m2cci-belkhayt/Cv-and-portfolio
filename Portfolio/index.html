@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <!-- Bootstrap Container -->
+    <div class="container-flex">
+    <!---------------------navigation bar ------------------------------------->
+      <header>
+        <nav>
+          <div class="logo">
+            <i class="fa-solid fa-font-awesome"></i>
+            <a href="#">Taha's Portfolio</a>
+          </div>
+          <ul class="menu-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="log-in"> <a href="../login/index.html"> Log in  </a></button>
+          <div class="burger-menu">&#9776;</div>
+  
+        </nav>
+    </header>
+      <!---------------------The core ------------------------------------->
+      <div class="container">
+    <h1> Here you gonna find my Portfolio with my projects</h1>
+        <!-- Image 5 -->
+        <div class="row">
+          <div class="col-md-6 img-gallery">
+            <figure>
+              <a href="link-to-image5">
+                <img style="width: 40%;" src="./images/img2.jpeg" alt="Image 5" class="img-fluid">
+              </a>
+              <figcaption style="margin-left: 28%;">Title for Image 5</figcaption>
+  
+            </figure>
+          </div>
+          <div class="col-md-6">helooooooooooooooooooo</div>
+
+        </div>
+
+
+        <!-- Image 5 -->
+        <div class="row">
+          <div class="col-md-6 img-gallery">
+            <figure>
+              <a href="link-to-image5">
+                <img src="./images/img6.jpg" alt="Image 5" class="img-fluid">
+              </a>
+              <figcaption>Title for Image 5</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+
+
+       
+        <!-- Image 5 -->
+        <div class="row">
+          <div class="col-md-6 img-gallery">
+            <figure>
+              <a href="link-to-image5">
+                <img src="./images/img6.jpg" alt="Image 5" class="img-fluid">
+              </a>
+              <figcaption>Title for Image 5</figcaption>
+
+            </figure>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      
+        <!-- Image 5 -->
+        <div class="row">
+          <div class="col-md-6 img-gallery">
+            <figure>
+              <a href="link-to-image5">
+                <img src="./images/img6.jpg" alt="Image 5" class="img-fluid">
+              </a>
+              <figcaption>Title for Image 5</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+        <!-- Image 5 -->
+        <div class="row">
+          
+          <div class="col-md-6 img-gallery">
+            <figure>
+              <a href="link-to-image5">
+                <img src="./images/img6.jpg" alt="Image 5" class="img-fluid">
+                <figcaption>Title for Image 5</figcaption>
+              </a>
+              
+            </figure>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+
+      </div>
+      
+      <!---------------------Footer ------------------------------------->
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-section">
+            <div class="footer-subscribe">
+              <h2>
+                This is my funny work
+              </h2>
+              <div class="input-box">
+                <input type="email" placeholder="Email Address" />
+                <button>
+                  <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.002 11.001H0.501953M40.002 11.001L30.002 1.00098M40.002 11.001L30.002 21.001" stroke="#0E100F"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <nav class="footer-nav">
+              <div>
+                <h3>Company</h3>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>GSAP</h3>
+                <ul>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Showcase</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Community</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Connect</h3>
+                <ul>
+                  <li><a href="#">Codepen</a></li>
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="footer-copyright">
+            <p>©2023 Taha, Inc. All rights reserved.</p>
+            <p>Privacy Policy.</p>
+            <p>Terms of Use.</p>
+          </div>
+        </div>
+      </footer>
+    </div>  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.menu-links');
+    
+        burgerMenu.addEventListener('click', function () {
+          navLinks.classList.toggle('show');
+        });
+      });
+    </script>
+  </body>
+</html>
