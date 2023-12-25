@@ -58,7 +58,7 @@ figcaption {
 /* nav bar ------------------------------------------------------------------------------------------------------- */
 
 header {
-  background-color: hsl(0, 0%, 20%);
+  background-color: black;
   color: white;
   padding: 1em;
   text-align: center;
@@ -223,24 +223,71 @@ footer {
 }
 
 @media only screen and (max-width: 1100px) {
-  .menu-links {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #333;
-      padding: 10px;
+  body {
+    justify-content: flex-start;
   }
 
-  .menu-links.show {
-      display: flex;
+  h1 {
+    margin: 20px 0;
+  }
+
+  .img-gallery a > img {
+    margin-left: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .separator-line {
+    width: 100%;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  .menu-links {
+    position: static;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: space-between;
+    width: auto;
+    padding-left: 0;
   }
 
   .burger-menu {
-      display: block;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav ul {
+    padding-left: 0;
+  }
+
+  .menu-links {
+    position: static;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: space-between;
+    width: auto;
+    padding-left: 0;
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  /* Add responsive styles for smaller screens */
+  .img-gallery a > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
