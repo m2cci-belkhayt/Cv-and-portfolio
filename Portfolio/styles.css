@@ -8,6 +8,9 @@ body {
   align-items: center;
   margin: 0px;
 }
+a>img{
+  width:30px;
+}
 
 h1 {
   text-align: center;
@@ -57,51 +60,6 @@ figcaption {
 }
 /* nav bar ------------------------------------------------------------------------------------------------------- */
 
-header {
-  background-color: black;
-  color: white;
-  padding: 1em;
-  text-align: center;
-  width: 100%;
-}
-
-nav {
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-button {
-  border: 0;
-  outline: none;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-}
-
-nav div i {
-  padding-left: 20px;
-  color: #0aa5ff;
-  font-size: 22px;
-}
-
-nav div a {
-  color: white;
-  margin-left: 12px;
-  font-size: larger;
-  font-size: 30px;
-}
-
-
-nav ul {
-  display: flex;
-  align-items: auto;
-  gap: 24px;
-  border-right: 1px solid #999999;
-  padding-left: 500px;
-}
 
 .menu-links li a {
   display: flex;

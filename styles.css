@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-
+img{
+  width: 30px;
+}
 *,
 *::before,
 *::after {
@@ -49,6 +51,7 @@ a {
 a:hover{
   color: blue;
 }
+
 .tab{
   color: black;
   width: 150px;
@@ -179,8 +182,26 @@ input[id="react"]:checked ~ .slider {
   color: white;
 }
 
+button.btn.btn-primary{
+  align-items: flex-end;
+  border: blue solid;
+  background-color: gray;
+}
+ 
+button.btn.btn-primary:hover{
+  background-color: blue;
+}
+
+
+button.btn.btn-primary>a{
+  color: white;
+}
+
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
+  body{
+    margin-top: 150px;
+  }
   .tabs {
     flex-direction: column;
     align-items: center;
@@ -193,6 +214,27 @@ input[id="react"]:checked ~ .slider {
 
   .tabs .slider {
     width: 100%;
-    transform: translateX(0);
+    z-index: 1;
+  }
+  input[id="html"]:checked ~ .slider {
+    transform: translateY(20%);
+  }
+  input[id="css"]:checked ~ .slider {
+    transform: translateY(180%);
+  }
+  input[id="javascript"]:checked ~ .slider {
+    transform: translateY(350%);
+  }
+  input[id="react"]:checked ~ .slider {
+    transform: translateY(500%);
+  }
+  .tabs .slider {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    border-radius: inherit;
+  }
+  .tab {
+    height: 70px;
   }
 }
